@@ -230,7 +230,6 @@ footer a{ color:#f5eee6; text-decoration: underline; }
 }
 
 /* === AJUSTES GERAIS === */
-body { padding-top: 0; }
 @media (max-width: 991.98px) {
   .navbar .navbar-collapse {
     background: var(--brand);
