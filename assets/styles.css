@@ -1,0 +1,241 @@
+:root{
+  --brand-bg:#3c2216;     /* deep cocoa */
+  --brand:#5a3727;        /* chocolate */
+  --brand-2:#8e5e3b;      /* caramel */
+  --brand-3:#d9b28b;      /* latte */
+  --cream:#f6ede5;        /* light cream */
+  --ink:#2a1a12;
+}
+
+html,body{scroll-behavior:smooth;}
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--cream), #fff);
+}
+
+.navbar{
+  background: var(--brand);
+}
+
+.navbar .nav-link, .navbar-brand{
+  color: #fdf8f3 !important;
+  font-weight: 600;
+}
+
+.btn-brand{
+  background: var(--brand-2);
+  color:#fff;
+  border:none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+.btn-brand:hover{ background: #74482e; color:#fff; }
+
+.hero{
+  background: radial-gradient(1200px 400px at 70% -10%, #ffffffcc 10%, rgba(255,255,255,0) 60%), var(--brand-bg);
+  color:#fff;
+  padding: 6rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero .badge{
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.24);
+  color:#fff;
+}
+
+.logo-wrap{
+  background: linear-gradient(160deg, rgba(217,178,139,.2), rgba(255,255,255,.05));
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(3px);
+}
+
+.section-title{
+  color: var(--brand);
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+.card{
+  border: none;
+  box-shadow: 0 10px 30px rgba(60,34,22,.07);
+  border-radius: 1.25rem;
+}
+
+.card .price{
+  color: var(--brand);
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+
+.badge-soft{
+  background: #fff7ef;
+  border: 1px solid #f1e0cf;
+  color: var(--brand-2);
+  font-weight: 600;
+}
+
+.feature-icon{
+  width: 48px;
+  height: 48px;
+  display:grid;
+  place-items:center;
+  border-radius: 14px;
+  background: #fff2e4;
+  color: var(--brand-2);
+}
+
+footer{
+  background: var(--brand);
+  color:#f5eee6;
+}
+footer a{ color:#f5eee6; text-decoration: underline; }
+.hoverable{ transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease; }
+.hover-glow{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(90,55,39,.28); }
+.nav-link{ position: relative; }
+.nav-link::after{
+  content:""; position:absolute; left:0; right:0; bottom:.35rem; height:2px;
+  background: var(--brand-3); transform: scaleX(0); transform-origin:left; transition: transform .25s ease;
+}
+.nav-link.hover-glow::after{ transform: scaleX(1); }
+.ripple{
+  position:absolute; border-radius:50%; transform:scale(0); animation:ripple .6s linear; background-color: rgba(255,255,255,.35);
+  pointer-events:none;
+}
+@keyframes ripple{
+  to{ transform:scale(12); opacity:0; }
+}
+.btn{ position:relative; overflow:hidden; }
+
+/* --- alinhamento e tamanho dos botões de estoque --- */
+#inv-edit-toggle,
+#inv-reset {
+  height: 38px; /* mesma altura padrão dos inputs do Bootstrap */
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* botão marrom */
+#inv-edit-toggle {
+  background-color: var(--brand-2);
+  color: #fff;
+}
+
+#inv-edit-toggle:hover {
+  background-color: #74482e;
+}
+
+/* botão branco */
+#inv-reset {
+  background-color: #fff;
+  color: var(--brand-2);
+  border: 1px solid #cbb09a;
+}
+
+#inv-reset:hover {
+  background-color: #f7ede5;
+}
+
+/* remove o contorno azul e o efeito de foco */
+#inv-edit-toggle:focus,
+#inv-reset:focus,
+#inv-edit-toggle:active,
+#inv-reset:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* === Botões da área de disponibilidade === */
+#inv-edit-toggle, #inv-reset, #admin-login, #admin-logout {
+  height: 38px;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+/* botão Entrar como admin */
+#admin-login {
+  background-color: var(--brand-2, #5a3727);
+  color: #fff;
+}
+#admin-login:hover {
+  background-color: #74482e;
+  color: #fff;
+}
+
+/* botão Atualizar estoque */
+#inv-edit-toggle {
+  background-color: var(--brand-2, #5a3727);
+  color: #fff;
+}
+#inv-edit-toggle:hover {
+  background-color: #74482e;
+}
+
+/* botão Restaurar padrão */
+#inv-reset {
+  background: #fff;
+  color: var(--brand-2, #5a3727);
+  border: 1px solid #cbb09a;
+}
+#inv-reset:hover {
+  background: #f7ede5;
+}
+
+#inv-edit-toggle:focus,
+#inv-reset:focus,
+#admin-login:focus,
+#admin-logout:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* === Animação de brilho para o status da cantina === */
+.pulse-green {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* cria o “pulso” verde suave no fundo */
+.pulse-green::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(144,238,144,0.25) 0%, transparent 70%);
+  animation: pulseGlow 2.5s infinite;
+  z-index: -1;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+/* suaviza o fade entre estados (aberta/fechada) */
+#status-cantina {
+  transition: opacity 0.6s ease;
+}
+
+
+

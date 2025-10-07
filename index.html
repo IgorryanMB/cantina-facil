@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cantina Fácil · Cooperativa Escolar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <meta name="theme-color" content="#5a3727">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo.jpg" alt="Cantina Fácil" width="42" height="42" class="rounded me-2">
+          <span style="font-family:Marcellus, serif; letter-spacing:.5px;">Cantina Fácil</span>
+        </a>
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cardapio">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#regras">Horários</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#regras">Regras</a>
+            </li>
+          </ul>
+          <a href="#cardapio" class="btn btn-brand ms-lg-3">Peça agora</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="badge rounded-pill mb-3">Cooperativa Escolar</span>
+            <h1 class="display-5 fw-bold mb-3" style="font-family:Marcellus, serif;">Cantina Fácil</h1>
+            <p class="lead mb-4">Veja o que ainda está disponível na cantina e acompanhe o estoque em tempo real.</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+              <a href="#cardapio" class="btn btn-brand btn-lg px-4">Ver cardápio</a>
+              <a href="#disponiveis" class="btn btn-light btn-lg px-4">Ver disponíveis</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="logo-wrap mx-auto" style="max-width: 420px;">
+              <img src="assets/logo.jpg" class="img-fluid rounded" alt="Logo Cantina Fácil">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-3">Sobre o projeto</h2>
+        <p class="text-muted mb-4">Um sistema simples para alunos verificarem quais produtos ainda estão disponíveis na cantina da escola.</p>
+      </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Cardápio</h2>
+          <p class="text-muted mb-0">Confira os produtos oferecidos na cantina.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Pão de queijo</h5><p class="text-muted">Assado na hora.</p><div class="price">R$ 5,00</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Suco natural</h5><p class="text-muted">Laranja, uva ou maracujá.</p><div class="price">R$ 7,50</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Sanduíche natural</h5><p class="text-muted">Frango, alface e tomate.</p><div class="price">R$ 12,00</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Coxinha</h5><p class="text-muted">Recheio de frango temperado.</p><div class="price">R$ 6,00</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Pastel</h5><p class="text-muted">Queijo ou carne.</p><div class="price">R$ 8,00</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Bolo de cenoura</h5><p class="text-muted">Cobertura de chocolate.</p><div class="price">R$ 5,50</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Refrigerante</h5><p class="text-muted">Lata 350 ml.</p><div class="price">R$ 6,50</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Água mineral</h5><p class="text-muted">Com ou sem gás.</p><div class="price">R$ 4,00</div></div></div>
+          <div class="col-md-6 col-lg-4"><div class="card h-100 p-3"><h5>Vitamina</h5><p class="text-muted">Banana com leite.</p><div class="price">R$ 9,00</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disponíveis -->
+    <section id="disponiveis" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Disponibilidade</h2>
+          <p class="text-muted mb-0">Veja o que ainda está disponível hoje na cantina.</p>
+        </div>
+
+        <!-- filtros + controles -->
+        <div class="row g-3 mb-3 align-items-center">
+          <div class="col-sm-8 col-lg-6">
+            <input id="inv-search" type="search" class="form-control" placeholder="Buscar produto...">
+          </div>
+          <div class="col-sm-4 col-lg-3">
+            <select id="inv-filter" class="form-select">
+              <option value="">Todos</option>
+              <option value="ok">Em estoque</option>
+              <option value="low">Acabando</option>
+              <option value="out">Esgotado</option>
+            </select>
+          </div>
+
+          <!-- área de botões -->
+          <div class="col-sm-4 col-lg-3 d-flex gap-2">
+            <button id="admin-login" class="btn w-100">Entrar como Admin</button>
+            <button id="inv-edit-toggle" class="btn w-100 d-none">Atualizar</button>
+            <button id="inv-reset" class="btn w-100 d-none">Restaurar</button>
+            <button id="admin-logout" class="btn w-100 d-none">Sair</button>
+          </div>
+        </div>
+
+        <!-- editor (só no modo admin) -->
+        <div id="inv-editor" class="card p-3 mb-3 d-none">
+          <div class="row g-3 align-items-end">
+            <div class="col-md-5">
+              <label class="form-label">Produto</label>
+              <select id="inv-item" class="form-select"></select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Quantidade</label>
+              <input id="inv-qtd" type="number" min="0" class="form-control" value="1">
+            </div>
+            <div class="col-md-4 d-flex flex-wrap gap-2">
+              <button id="inv-add" class="btn btn-success flex-fill">Repor (+)</button>
+              <button id="inv-sub" class="btn btn-danger flex-fill">Baixar (–)</button>
+              <button id="inv-set" class="btn btn-secondary flex-fill">Definir quantidade</button>
+              <button id="inv-zero" class="btn btn-outline-danger flex-fill">Esgotar item</button>
+            </div>
+          </div>
+          <div class="mt-2 text-muted small">Apenas admin altera. As mudanças ficam salvas no navegador.</div>
+        </div>
+
+        <!-- tabela -->
+        <div class="card p-0">
+          <div class="table-responsive">
+            <table class="table align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th>Produto</th>
+                  <th>Quantidade</th>
+                  <th>Status</th>
+                  <th class="text-end">Atualizado</th>
+                </tr>
+              </thead>
+              <tbody id="inv-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Regras & Horários -->
+     <!-- Regras & Horários -->
+<section id="regras" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Regras & horários</h2>
+      <p class="text-muted mb-0">Para um atendimento rápido e justo a todos.</p>
+    </div>
+
+    <!-- status dinâmico -->
+    <div id="status-cantina" class="alert text-center fw-semibold mb-4" role="alert">
+      Calculando status...
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="mb-3">Horários de atendimento</h5>
+          <ul class="mb-0" id="lista-horarios">
+            <li>☀️ <strong>Manhã:</strong> 9h40 — 10h00</li>
+            <li>🍽️ <strong>Almoço:</strong> 12h00 — 13h00</li>
+            <li>🌇 <strong>Tarde:</strong> 15h40 — 16h00</li>
+            <li>🌙 <strong>Noite:</strong> 21h00 — 21h20</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="mb-3">Regras rápidas</h5>
+          <ul class="mb-0">
+            <li>Forme fila e aguarde sua vez com calma 😊</li>
+            <li>Prefira Pix ou cartão para agilizar o troco.</li>
+            <li>Itens populares acabam rápido — confira “Disponíveis”.</li>
+            <li>Evite desperdício: compre apenas o que for consumir.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <footer class="py-4 text-center text-light" style="background:#5a3727;">
+      <div class="container">© <span id="y"></span> Cantina Fácil — Cooperativa Escolar</div>
+    </footer>
+
+    <!-- Modal de Login Admin -->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Entrar como admin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <form id="admin-form" class="needs-validation" novalidate>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="admin-pin" class="form-label">PIN</label>
+                <input type="password" class="form-control" id="admin-pin" required minlength="1" autocomplete="current-password" placeholder="Digite o PIN">
+                <div class="invalid-feedback">PIN incorreto. Tente novamente.</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-brand">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
