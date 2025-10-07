@@ -236,4 +236,12 @@ footer a{ color:#f5eee6; text-decoration: underline; }
 #status-cantina {
   transition: opacity 0.6s ease;
 }
-
+.navbar-toggler {
+  background-color: #5a3727;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 8px;
+}
+.navbar-toggler-icon {
+  filter: invert(1); /* deixa as linhas brancas */
+}
