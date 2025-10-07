@@ -236,6 +236,14 @@ footer a{ color:#f5eee6; text-decoration: underline; }
 #status-cantina {
   transition: opacity 0.6s ease;
 }
+/* botão hamburguer padrão do Bootstrap, mas com cor marrom */
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  background-color: transparent;
+}
 
+.navbar-light .navbar-toggler-icon {
+  filter: invert(0.3) sepia(1) saturate(10) hue-rotate(355deg) brightness(0.8);
+}
 
 
