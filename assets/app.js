@@ -291,4 +291,3 @@
   atualizarStatus();
   setInterval(atualizarStatus, 60000); // atualiza a cada 1 min
 })();
-
